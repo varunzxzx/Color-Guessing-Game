@@ -1,73 +1,84 @@
-body{
-	background-color: #232323;
-	margin: 0;
-	font-family: "Montserrat", "Avenir";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    background: #232323;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", "Avenir", sans-serif;
 }
 
-.square{
-	width: 30%;
-	background: purple;
-	padding-bottom: 30%;
-	float: left;
-	margin: 1.66%;
-	border-radius: 15%;
-	transition: background 0.6s;
-	--webkit-transition: background 0.6s;
-	--moz-transition: background 0.6s;
+h1,#stripe {
+    text-align: center;
 }
 
-#container{
-	margin: 20px auto;
-	max-width: 600px;
+h1 {
+    color: white;
+    background: steelblue;
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    font-size: 33px;
+    text-transform: uppercase;
 }
 
-h1{
-	color: white;
-	line-height: 1.1;
-	text-align: center;
-	background: steelblue;
-	margin: 0;
-	font-weight: normal;
-	text-transform: uppercase;
-	padding: 20px 0;
+#colorCodeDisplay {
+    font-size: 200%;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
-#colorDisplay{
-	font-size: 200%;
+#stripe {
+    background: white;
+    color: steelblue;
+    height: 30px;
 }
 
-#message{
-	display: inline-block;
-	width: 20%;
+#displayMsg {
+    display: inline-block;
+    width: 20%;
 }
 
-#stripe{
-	background: white;
-	height: 30px;
-	text-align: center;
-}
-
-.selected{
-	color: white;
-	background: steelblue;
-}
-
-button{
-	border: none;
-	background: none;
-	text-transform: uppercase;
-	height: 100%;
-	font-weight: 700;
-	color: steelblue;
-	letter-spacing: 1px;
-	font-size: inherit;
-	outline: none;
-	transition: all 0.3s;
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: steelblue;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 100%;
+    letter-spacing: 1px;
+    transition: all 0.3s;
 	--webkit-transition: all 0.3s;
 	--moz-transition: all 0.3s;
 }
 
-button:hover{
-	color: white;
-	background: steelblue;
+button:hover {
+    color: white;
+    background: steelblue;
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.square {
+    width: 30%;
+    float: left;
+    padding-bottom: 30%;
+    background: yellow;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s;
+	--webkit-transition: background 0.6s;
+	--moz-transition: background 0.6s;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
 }
